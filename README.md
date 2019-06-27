@@ -22,7 +22,20 @@ var grade3 = 5.0
 
 // your code here
 
-//I'll get his right 
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+var yourGrade = 9.0
+var average = (grade1 + grade2 + grade3 + yourGrade)/4
+//print (average)//
+
+if yourGrade > average {
+print ("above average")
+}
+else {
+print ("below average")
+}
+
 ```
 
 ***
@@ -34,6 +47,16 @@ You are given a number. Print even if the number is even or odd otherwise.
 let number = 2
 
 // your code here
+
+let number = 2
+
+if number % 2 == 0 {
+print ("even")
+}
+else {
+print ("odd")
+}
+
 ```
 
 ***
@@ -46,6 +69,17 @@ var a = 12
 var b = 3
 
 // code here
+
+var a3 = 12
+var b3 = 3
+
+if a3 % b3 == 0 {
+print ("divisible")
+}
+else {
+print ("not divisible")
+}
+
 ```
 
 ***
@@ -59,6 +93,17 @@ var b = 3
 var c = 2
 
 // your code here
+
+var a4 = 2
+var b4 = 3
+var c4 = 2
+if a4 == b4 || b4 == c4 || c4 == a4 {
+print ("At least two variables have the same value")
+}
+else {
+print ("All the values are different")
+}
+
 ```
 
 ***
@@ -71,6 +116,23 @@ var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
 // your code here
+
+var baconAge = 6
+var eggsAge = 12
+
+if baconAge > 7 && eggsAge > 21 {
+print ("throw out bacon + eggs")
+}
+else if baconAge > 7 && eggsAge <= 21 {
+print ("throw out bacon")
+}
+else if baconAge <= 7 && eggsAge > 21 {
+print ("throw out eggs")
+}
+else {
+print ("you can cook bacon and eggs")
+}
+
 ```
 
 ***
@@ -83,6 +145,15 @@ The above rule is valid except that every 100 years special rules apply. Years t
 let year = 2014
 
 // your code here
+
+let year = 2000
+if (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0 ){
+print ("Leap year!")
+}
+else {
+print ("Not a leap year!")
+}
+
 ```
 
 ***
@@ -94,6 +165,16 @@ If you use `random()` it will give you a random number within a specified range.
 let randomNum = Int.random(in: 0...100)
 
 // your code here
+
+let randomNum = Int.random(in: 0...100)
+print (randomNum)
+if randomNum % 2 == 0 {
+print ("heads")
+}
+else {
+print ("tails")
+}
+
 ```
 
 Hint: use an if/else block along with the `%` operator
@@ -110,6 +191,15 @@ var c = 3
 var d = 4
 
 // your code here
+
+var a8 = 5
+var b8 = 6
+var c8 = 3
+var d8 = 4
+var array = [a8, b8, c8, d8]
+var smallestValue = array.min()
+print (smallestValue)
+
 ```
 
 ***
